@@ -69,6 +69,9 @@ packer.startup(function(use)
     -- colorschemes
     use("joshdick/onedark.vim")
 
+    -- gitsigns
+    use "lewis6991/gitsigns.nvim"
+
     -- parantheses and surrounds
     use("frazrepo/vim-rainbow")
 

@@ -1,6 +1,19 @@
 local servers = {
-    "sumneko_lua",
-    "jsonls",
+    "clangd",
+    "css-lsp",
+    "dockerfile-language-server",
+    "emmet-ls",
+    "gopls",
+    "html-lsp",
+    "json-lsp",
+    "pyright",
+    "sqls",
+    "solidity",
+    "lua-language-server",
+    "tailwind-language-server",
+    "typescript-language-server",
+    "vim-language-server",
+    "yaml-language-server"
 }
 
 local settings = {
