@@ -12,7 +12,6 @@ vim.cmd([[
   augroup END
 ]])
 
-
 packer.startup(function(use)
 
     -- Packer can manage itself
@@ -41,6 +40,24 @@ packer.startup(function(use)
     use("ryanoasis/vim-devicons")
     use("nvim-tree/nvim-web-devicons")
 
+    -- prettier
+    use ({
+        'prettier/vim-prettier',
+        run = 'yarn install',
+        ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
+    })
+
+    -- completions (cmp plugins)
+    use "hrsh7th/nvim-cmp" -- The completion plugin
+    use "hrsh7th/cmp-buffer" -- buffer completions
+    use "hrsh7th/cmp-path" -- path completions
+    use "hrsh7th/cmp-cmdline" -- cmdline completions
+    use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
+    -- snippets
+    use "L3MON4D3/LuaSnip" --snippet engine
+    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
     -- colorschemes
     use("joshdick/onedark.vim")
 
@@ -53,4 +70,3 @@ packer.startup(function(use)
 		packer.sync()
 	end
 end)
-
