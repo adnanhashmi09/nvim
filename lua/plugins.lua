@@ -69,6 +69,15 @@ packer.startup(function(use)
     -- colorschemes
     use("joshdick/onedark.vim")
 
+    -- treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
+
     -- gitsigns
     use "lewis6991/gitsigns.nvim"
 
