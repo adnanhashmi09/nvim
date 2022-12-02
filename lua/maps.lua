@@ -23,3 +23,6 @@ map("n", "<C-Up>", ":resize -2<CR>")
 map("n", "<C-Down>", ":resize +2<CR>")
 map("n", "<C-Right>", ":vertical resize -2<CR>")
 map("n", "<C-Left>", ":vertical resize +2<CR>")
+
+-- Press jk fast to enter
+map("i", "jk", "<ESC>")
