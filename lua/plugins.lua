@@ -40,6 +40,9 @@ packer.startup(function(use)
     use("ryanoasis/vim-devicons")
     use("nvim-tree/nvim-web-devicons")
 
+    -- Comment
+    use("numToStr/Comment.nvim")
+
     -- prettier
     use ({
         'prettier/vim-prettier',
@@ -64,19 +67,20 @@ packer.startup(function(use)
     use "neovim/nvim-lspconfig" -- enable LSP
     use "williamboman/mason.nvim" -- simple to use language server installer
     use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-    use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
+    use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
 
     -- colorschemes
     use("joshdick/onedark.vim")
 
     -- treesitter
     use {
-        'nvim-treesitter/nvim-treesitter',
+        "nvim-treesitter/nvim-treesitter",
         run = function()
             local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
             ts_update()
         end,
     }
+    use "JoosepAlviste/nvim-ts-context-commentstring"
 
     -- gitsigns
     use "lewis6991/gitsigns.nvim"
