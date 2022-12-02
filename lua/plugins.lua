@@ -48,6 +48,8 @@ packer.startup(function(use)
     -- Comment
     use("numToStr/Comment.nvim")
 
+    use "windwp/nvim-autopairs"
+
     -- prettier
     use ({
         'prettier/vim-prettier',
