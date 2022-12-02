@@ -92,9 +92,8 @@ packer.startup(function(use)
     -- Terminal
     use "akinsho/toggleterm.nvim"
 
-    --[[ use {"akinsho/toggleterm.nvim", tag = '*', config = function() ]]
-    --[[     require("toggleterm").setup() ]]
-    --[[ end} ]]
+    -- Markdown preview
+    --[[ use "ellisonleao/glow.nvim" ]]
 
     -- gitsigns
     use "lewis6991/gitsigns.nvim"
