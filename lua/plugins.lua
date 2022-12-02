@@ -35,8 +35,6 @@ packer.startup(function(use)
         run = 'make'
     })
 
-    --[[ use("preservim/nerdtree") ]]
-    --[[ use("PhilRunninger/nerdtree-visual-selection") ]]
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
@@ -63,18 +61,18 @@ packer.startup(function(use)
     use "hrsh7th/cmp-path" -- path completions
     use "hrsh7th/cmp-cmdline" -- cmdline completions
     use "saadparwaiz1/cmp_luasnip" -- snippet completions
-    use "hrsh7th/cmp-nvim-lsp"
+    --[[ use "hrsh7th/cmp-nvim-lsp" ]]
     use "hrsh7th/cmp-nvim-lua"
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-    --
+
     -- LSP
-    use "neovim/nvim-lspconfig" -- enable LSP
-    use "williamboman/mason.nvim" -- simple to use language server installer
-    use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-    use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
+    --[[ use "neovim/nvim-lspconfig" -- enable LSP ]]
+    --[[ use "williamboman/mason.nvim" -- simple to use language server installer ]]
+    --[[ use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer ]]
+    --[[ use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions ]]
 
     -- colorschemes
     use("joshdick/onedark.vim")
