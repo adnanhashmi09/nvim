@@ -89,6 +89,13 @@ packer.startup(function(use)
     }
     use "JoosepAlviste/nvim-ts-context-commentstring"
 
+    -- Terminal
+    use "akinsho/toggleterm.nvim"
+
+    --[[ use {"akinsho/toggleterm.nvim", tag = '*', config = function() ]]
+    --[[     require("toggleterm").setup() ]]
+    --[[ end} ]]
+
     -- gitsigns
     use "lewis6991/gitsigns.nvim"
 
