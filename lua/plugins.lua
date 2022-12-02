@@ -35,8 +35,15 @@ packer.startup(function(use)
         run = 'make'
     })
 
-    use("preservim/nerdtree")
-    use("PhilRunninger/nerdtree-visual-selection")
+    --[[ use("preservim/nerdtree") ]]
+    --[[ use("PhilRunninger/nerdtree-visual-selection") ]]
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
     use("ryanoasis/vim-devicons")
     use("nvim-tree/nvim-web-devicons")
 
