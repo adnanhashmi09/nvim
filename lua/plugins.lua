@@ -103,7 +103,7 @@ packer.startup(function(use)
 
     -- trim whitespace
     use("cappyzawa/trim.nvim")
-    if packer_bootstrap then
+    if PACKER_BOOTSTRAP then
         packer.sync()
     end
 end)
