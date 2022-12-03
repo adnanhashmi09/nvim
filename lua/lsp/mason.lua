@@ -1,32 +1,19 @@
 local servers = {
-    "clangd",
-    "css-lsp",
-    "dockerfile-language-server",
-    "emmet-ls",
-    "gopls",
-    "html-lsp",
-    "json-lsp",
-    "pyright",
-    "sqls",
-    "solidity",
-    "lua-language-server",
-    "tailwind-language-server",
-    "typescript-language-server",
-    "vim-language-server",
-    "yaml-language-server"
+    "sumneko_lua",
+    "jsonls",
 }
 
 local settings = {
-    ui = {
-        border = "none",
-        icons = {
-            package_installed = "◍",
-            package_pending = "◍",
-            package_uninstalled = "◍",
-        },
-    },
-    log_level = vim.log.levels.INFO,
-    max_concurrent_installers = 4,
+	ui = {
+		border = "none",
+		icons = {
+			package_installed = "◍",
+			package_pending = "◍",
+			package_uninstalled = "◍",
+		},
+	},
+	log_level = vim.log.levels.INFO,
+	max_concurrent_installers = 4,
 }
 
 require("mason").setup(settings)
