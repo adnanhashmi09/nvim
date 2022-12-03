@@ -1,6 +1,16 @@
 local servers = {
     "sumneko_lua",
     "jsonls",
+    "tsserver",
+    "html",
+    "gopls",
+    "pyright",
+    "cssls",
+    "rust_analyzer",
+    "solidity" ,
+    "tailwindcss",
+    "dockerls",
+    "sqls"
 }
 
 local settings = {

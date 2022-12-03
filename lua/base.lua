@@ -14,7 +14,7 @@ o.cursorline = false
 o.incsearch = true
 o.hlsearch = false
 o.cmdheight = 2
-o.guicursor = '' 
+o.guicursor = ''
 
 -- Indicates which mode editor is currently in eg: --> Insert
 o.showmode = false
@@ -26,9 +26,9 @@ o.hidden = true
 o.scrolloff = 8
 
 -- better editing experience
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
+o.tabstop = 2
+o.softtabstop = 2
+o.shiftwidth = 2
 o.expandtab = true
 o.smartindent = true
 o.wrap = false
