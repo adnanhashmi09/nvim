@@ -2,6 +2,7 @@ local g = vim.g
 local o = vim.o
 
 o.exrc = true
+o.mouse = 'a'
 
 o.termguicolors = true
 
