@@ -1,5 +1,5 @@
 local function map(m, k, v)
-	vim.keymap.set(m, k, v, { silent = true, noremap = true})
+  vim.keymap.set(m, k, v, { silent = true, noremap = true })
 end
 
 -- Mimic shell movements
@@ -28,3 +28,6 @@ map("n", "<C-Left>", ":vertical resize +2<CR>")
 
 -- Press jk fast to enter
 map("i", "jk", "<ESC>")
+
+-- Formatting
+     map("n", "<leader>fr", ":Format<CR>")
