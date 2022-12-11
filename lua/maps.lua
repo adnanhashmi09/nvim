@@ -2,10 +2,6 @@ local function map(m, k, v)
 	vim.keymap.set(m, k, v, { silent = true, noremap = true })
 end
 
-local function term_map(m, k, v)
-	vim.keymap.set(m, k, v, { silent = true })
-end
-
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -19,7 +15,7 @@ map("i", "<C-E>", "<ESC>A")
 map("i", "<C-A>", "<ESC>I")
 
 -- NERDTree Maps
-map("n", "<leader>n", ":NvimTreeFindFileToggle<cr>")
+map("n", "<leader>n", ":NvimTreeFindFileToggle<CR>")
 map("n", "<leader>m", ":NvimTreeFocus<cr>")
 map("n", "<leader>ff", "<CMD>Telescope find_files<CR>")
 map("n", "<leader>fg", "<CMD>Telescope live_grep<CR>")
@@ -44,6 +40,9 @@ map("i", "jk", "<ESC>")
 -- Navigate buffers
 map("n", "<S-l>", ":bnext<CR>")
 map("n", "<S-h>", ":bprevious<CR>")
+
+-- close buffer
+map("n", "<leader>qq", ":bdelete<CR>")
 
 -- Move text up and down
 map("n", "<A-j>", "<Esc>:m .+1<CR>==g<Esc>")
