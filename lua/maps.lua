@@ -42,7 +42,7 @@ map("n", "<S-l>", ":bnext<CR>")
 map("n", "<S-h>", ":bprevious<CR>")
 
 -- close buffer
-map("n", "<leader>qq", ":bdelete<CR>")
+map("n", "<leader>qq", ":enew<bar>bd #<CR>")
 
 -- Move text up and down
 map("n", "<A-j>", "<Esc>:m .+1<CR>==g<Esc>")

@@ -2,7 +2,7 @@ local g = vim.g
 local o = vim.o
 
 o.exrc = true
-o.mouse = 'a'
+o.mouse = "a"
 
 o.termguicolors = true
 
@@ -10,12 +10,12 @@ o.termguicolors = true
 o.number = true
 o.numberwidth = 2
 o.relativenumber = true
-o.signcolumn = 'yes'
+o.signcolumn = "yes"
 o.cursorline = false
 o.incsearch = true
 o.hlsearch = false
 o.cmdheight = 2
-o.guicursor = ''
+o.guicursor = ""
 
 -- Indicates which mode editor is currently in eg: --> Insert
 o.showmode = false
@@ -36,7 +36,7 @@ o.wrap = false
 o.errorbells = false
 
 -- Makes neovim and host OS clipboard play nicely with each other
-o.clipboard = 'unnamedplus'
+o.clipboard = "unnamedplus"
 
 -- Case insensitive searching UNLESS /C or capital in search
 o.ignorecase = true
@@ -47,7 +47,7 @@ o.backup = false
 o.writebackup = false
 o.undofile = true
 o.swapfile = false
-o.undodir = '/home/adnan/.vim/undodir'
+o.undodir = "/home/adnan/.vim/undodir"
 
 -- Remember 50 items in commandline history
 o.history = 50
@@ -56,9 +56,12 @@ o.history = 50
 o.splitright = true
 o.splitbelow = true
 
+-- auto session
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 -- Preserve view while jumping
 --o.jumpoptions = 'view'
 
 -- Map <leader> to space
-g.mapleader = ' '
-g.maplocalleader = ' '
+g.mapleader = " "
+g.maplocalleader = " "

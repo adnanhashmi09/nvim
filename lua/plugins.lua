@@ -47,6 +47,9 @@ packer.startup(function(use)
 	use("ryanoasis/vim-devicons")
 	use("nvim-tree/nvim-web-devicons")
 
+	-- auto-sessino
+	use("rmagatti/auto-session")
+
 	-- Comment
 	use("numToStr/Comment.nvim")
 
