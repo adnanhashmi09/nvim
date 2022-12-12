@@ -104,7 +104,7 @@ packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 
 	-- parantheses and surrounds
-	use("frazrepo/vim-rainbow")
+	use("p00f/nvim-ts-rainbow")
 
 	-- trim whitespace
 	use("cappyzawa/trim.nvim")
